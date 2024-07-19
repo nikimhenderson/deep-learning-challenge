@@ -39,7 +39,7 @@ They all resulted in around a 72% accuracy, which is short of the target accurac
     * ASK_AMT—Funding amount requested
 3. What variables should be removed from the input data because they are neither targets nor features? In future exploration of this model I believe it would be beneficial to do an accounting of the weights of each of the features in order to determine how beneficial each is to the model. However just from looking at the variables, I think that the STATUS and SPECIAL_CONSIDERATIONS variables could be removed because they seem to have very little influence logically over whether funding is successful.
 ### Compiling, Training, Evaluating
-Attempt #1
+**Attempt #1**
 The first attempt resulted in an accuracy of 72.59%. This means that 72.59% of the model's predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 2
@@ -48,7 +48,7 @@ The parameters used were:
   * epochs = 100
 These parameters were used because they were predetermined by the challenge.
 
-Attempt #2
+**Attempt #2**
 The second attempt resulted in an accuracy of 72.62%. This means that 72.62% of the models predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 1
@@ -56,7 +56,7 @@ The parameters used were:
   * epochs = 100
 These parameters were used because a general rule of thumb for determining the correct number of neurons in a hidden layer should be between the size of the input layer and the size of the output layer. Also a different activation function was attempted to see if the activation function brought up the accuracy at all and it appears to make a very miniscule improvement.
 
-Attempt #3
+**Attempt #3**
 The third attempt resulted in an accuracy of 72.26%. This means that 72.26% of the model's predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 1
