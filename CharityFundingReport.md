@@ -39,29 +39,29 @@ They all resulted in around a 72% accuracy, which is short of the target accurac
     * ASK_AMT—Funding amount requested
 3. What variables should be removed from the input data because they are neither targets nor features? In future exploration of this model I believe it would be beneficial to do an accounting of the weights of each of the features in order to determine how beneficial each is to the model. However just from looking at the variables, I think that the STATUS and SPECIAL_CONSIDERATIONS variables could be removed because they seem to have very little influence logically over whether funding is successful.
 ### Compiling, Training, Evaluating
-**Attempt #1**
+**Attempt #1**<br/>
 The first attempt resulted in an accuracy of 72.59%. This means that 72.59% of the model's predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 2
       * layer1 = 80 neurons and 'relu' activation function
       * layer2 = 30 neurons and 'relu' activation function
-  * epochs = 100
+  * epochs = 100 <br/>
 These parameters were used because they were predetermined by the challenge.
 
-**Attempt #2**
+**Attempt #2** <br/>
 The second attempt resulted in an accuracy of 72.62%. This means that 72.62% of the models predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 1
       * layer 1 = 60 neurons and 'tanh' activation function
-  * epochs = 100
+  * epochs = 100 <br/>
 These parameters were used because a general rule of thumb for determining the correct number of neurons in a hidden layer should be between the size of the input layer and the size of the output layer. Also a different activation function was attempted to see if the activation function brought up the accuracy at all and it appears to make a very miniscule improvement.
 
-**Attempt #3**
+**Attempt #3** <br/>
 The third attempt resulted in an accuracy of 72.26%. This means that 72.26% of the model's predicted values align with the dataset's true values.
 The parameters used were:
   * layers = 1
       * layer 1 = 44 neurons and 'tanh' activation function
-  * epochs = 100
+  * epochs = 100 <br/>
 These parameters were used because there were 44 features in the dataset, indicating that the input layer is 44. If a general rule of thumb is that the size of the hidden layer should be between that of the input layer and the output layer, this should improve accuracy. Instead the accuracy is lower than the previous attempts, indicating that reducing the hidden layer too much reduces accuracy.
 
 ## Summary
